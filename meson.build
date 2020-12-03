@@ -1,24 +1,5 @@
 project('cmark', 'c', default_options: ['warning_level=3'])
 
-headers = [
-  'src/cmark.h',
-  'src/parser.h',
-  'src/buffer.h',
-  'src/node.h',
-  'src/iterator.h',
-  'src/chunk.h',
-  'src/references.h',
-  'src/utf8.h',
-  'src/scanners.h',
-  'src/inlines.h',
-  'src/houdini.h',
-  'src/cmark_ctype.h',
-  'src/render.h',
-  'src/cmark_version.h',
-  'src/cmark_export.h',
-  'src/config.h',
-]
-
 src = [
   'src/cmark.c',
   'src/node.c',
