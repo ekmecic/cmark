@@ -22,7 +22,7 @@ src = [
   'src/cmark_ctype.c',
 ]
 
-add_project_arguments('-fvisibility=hidden', language : 'c')
+add_project_arguments('-fvisibility=hidden', language: 'c')
 inc = include_directories('src')
-cmark_lib = static_library('cmark', src, include_directories : inc)
-cmark_dep = declare_dependency(link_with: cmark_lib, include_directories : inc)
+lib = static_library('cmark', src, include_directories: inc)
+dep = declare_dependency(link_with: lib, include_directories: inc)
